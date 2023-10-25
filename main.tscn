@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckf4tlth5qpu1"]
+
+[ext_resource type="PackedScene" uid="uid://b3bt33brbh44s" path="res://player.tscn" id="1_3kwvj"]
+
+[node name="main" type="Node"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.105882, 0.596078, 0.505882, 1)
+
+[node name="player" parent="." instance=ExtResource("1_3kwvj")]
+position = Vector2(508, 255)
