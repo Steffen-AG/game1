@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://b3bt33brbh44s"]
+[gd_scene load_steps=6 format=3 uid="uid://b3bt33brbh44s"]
 
 [ext_resource type="Texture2D" uid="uid://dthmip01q65sq" path="res://art/1693230419100760.jpg" id="1_33fgh"]
 [ext_resource type="Script" path="res://player.gd" id="1_i6l7q"]
 [ext_resource type="PackedScene" uid="uid://lsdhqpnn6mlv" path="res://bullet.tscn" id="2_b64or"]
+[ext_resource type="Texture2D" uid="uid://ccqlp7c0gma15" path="res://art/shitsPants.png" id="4_v80ac"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lfijn"]
 size = Vector2(66, 66)
@@ -24,10 +25,11 @@ offset_left = -39.0
 offset_top = 33.0
 offset_right = 39.0
 offset_bottom = 40.0
-max_value = 1.0
+step = 1.0
 
-[node name="ColorRect" type="ColorRect" parent="Healthbar"]
-layout_mode = 0
-offset_right = 78.0
-offset_bottom = 7.0
-color = Color(1, 0, 0, 1)
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_left = -39.0
+offset_top = 33.0
+offset_right = 424.0
+offset_bottom = 102.0
+texture_progress = ExtResource("4_v80ac")
