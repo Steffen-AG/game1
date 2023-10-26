@@ -47,6 +47,7 @@ func _process(delta):
 	
 	if Input.is_action_pressed("shoot") and canFire:
 		shoot()
+		#comment
 	
 	
 func shoot():
